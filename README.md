@@ -91,11 +91,28 @@ user meta is contained in the database file.
   </tr>
 </table>
 
+
 ### Photos
-Photos Url are contained in the database file
+Photos Url are contained in the database file as show above
+
+### Hour Index
+0: 2am-6am
+
+1: 6am-10am
+
+2: 10am-2pm
+
+3: 2pm-6pm
+
+4: 6pm-10pm
+
+5: 10pm-2am
 
 ### TimeFlag.txt
-Introduction to TimeFlag file
+Actually, Time flags are contained in database file. However, we extract it as csv file in case of independent usage.
+[Time Flag Download Link](https://drive.google.com/open?id=0B7yqoohfGsHNQVRKQlJHYzZTZ2c)
 
+format:
+`id,year,month,day,hour_index`
 ## Download the data
-[TPIC17 Download LINK](https://drive.google.com/open?id=0B7yqoohfGsHNUmEyeVVtai12YjA)
+[TPIC17 Download Link](https://drive.google.com/open?id=0B7yqoohfGsHNUmEyeVVtai12YjA)
