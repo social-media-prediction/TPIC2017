@@ -3,17 +3,99 @@ TPIC is an image popularity dataset with multi-faceted information, such as user
 
 ## Data organization
 ### USER_META.txt
-Introduction of User Meta file
-### Photos
-Photos used in dataset are organized in such structure:
+user meta is contained in the database file.
 
-`photos/user-id/photo-id.jpg`
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-9hbo{font-weight:bold;vertical-align:top}
+.tg .tg-yw4l{vertical-align:top}
+</style>
+<table class="tg" style="undefined;table-layout: fixed; width: 363px">
+<colgroup>
+<col style="width: 120px">
+<col style="width: 243px">
+</colgroup>
+  <tr>
+    <th class="tg-9hbo">Field</th>
+    <th class="tg-9hbo">Description</th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">id</td>
+    <td class="tg-yw4l">ID</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">pid</td>
+    <td class="tg-yw4l">image id</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">uid</td>
+    <td class="tg-yw4l">user id</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">views</td>
+    <td class="tg-yw4l">view count</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">commentcount</td>
+    <td class="tg-yw4l">comment count</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">haspeople</td>
+    <td class="tg-yw4l">a boolean value 0 or 1</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">titlelen</td>
+    <td class="tg-yw4l">post title length</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">deslen</td>
+    <td class="tg-yw4l">post description length</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">tagcount</td>
+    <td class="tg-yw4l">tag count</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">avgview</td>
+    <td class="tg-yw4l">average view</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">groupcount</td>
+    <td class="tg-yw4l">group count</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">avgmembercount</td>
+    <td class="tg-yw4l">average member count</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">year</td>
+    <td class="tg-yw4l">year flag</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">month</td>
+    <td class="tg-yw4l">month flag</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">day</td>
+    <td class="tg-yw4l">day flag</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">hour_index</td>
+    <td class="tg-yw4l">hour flag</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">url</td>
+    <td class="tg-yw4l">image gallery url</td>
+  </tr>
+</table>
+
+### Photos
+Photos Url are contained in the database file
 
 ### TimeFlag.txt
 Introduction to TimeFlag file
 
-## Stats and data quality
-Some statics about data quality
-
 ## Download the data
-Url to download the dataset
+[TPIC17 Download LINK](https://drive.google.com/open?id=0B7yqoohfGsHNUmEyeVVtai12YjA)
