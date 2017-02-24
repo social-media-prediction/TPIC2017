@@ -1,5 +1,5 @@
 ## Temporal Popularity Image Collection (TPIC)
-TPIC is an image popularity dataset with multi-faceted information, such as user profile, photo metadata, and visual content. It includes 68k user album images with user meta information from over 10 years time-line. Also, we provide normalized label for the convenience to improve data integrity.  It contains 680K photos in total over three years from Flickr. In order to use the temporal information from the dataset, we extracted time information from the metadata. To ensure the generalizability of our results, we sampled 100K, 200K and 400K photos with time-order. 
+TPIC is an temporal image popularity dataset with 680K photos and corresponding anoynimized photo-sharing records on Flickr ranges of 3 years. Specifically, TPIC is also a multi-faceted data collection, which contains photo image, user profile and photo metadata. For temporal prediction on popularity, we provide the popularity as the normalized views of each photo sharing behaviors. In order to protect the private information of sharing behaviors, we convert the timestamps to segmented time information and indexed of it by integer numbers. To ensure the generalizability of our results, we sampled 100K, 200K and 400K photos with time-order. 
 
 ## Data organization
 ### USER_META.txt
@@ -86,7 +86,7 @@ user meta is contained in the database file.
 
 
 ### Photos
-Photos Url are contained in the database file as show above
+Photos Url are published in the database file as show above
 
 ### Hour Index
 0: 2am-6am
