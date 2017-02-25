@@ -40,20 +40,20 @@ pid uid year month day hour_index
 The definition of hour index is defined below:
 * Hour Index
 
-0: 2am-6am
+* 0: 2am-6am
 
-1: 6am-10am
+* 1: 6am-10am
 
-2: 10am-2pm
+* 2: 10am-2pm
 
-3: 2pm-6pm
+* 3: 2pm-6pm
 
-4: 6pm-10pm
+* 4: 6pm-10pm
 
-5: 10pm-2am
+* 5: 10pm-2am
 
 ### LABEL.txt
-Finally, a file contains photo id, user id, and the normalized label is demonstrated below:
+The CSV of this type attacth labels to picture id and user id:
 ```
 pid uid logview
 ...
