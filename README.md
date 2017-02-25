@@ -1,94 +1,45 @@
 ## Temporal Popularity Image Collection (TPIC)
 For temporal prediction on popularity, TPIC is an temporal image popularity dataset with 680K photos and corresponding anoynimized photo-sharing records on Flickr ranges of 3 years. Specifically, TPIC is also a multi-faceted data collection, which contains photo image, user profile and photo metadata. We provide the popularity as the normalized views of each photo sharing behaviors. In order to protect the private information of sharing behaviors, we convert the timestamps to segmented time information and indexed of it by integer numbers. To ensure the generalizability of our results, we sampled 100K, 200K and 400K photos with time-order. 
+## Download The Data
+* [user&photo metadata](https://drive.google.com/open?id=0B7yqoohfGsHNZjFPX21sY2h0ZmM) (17.4MB)
+* [photo download urls](https://drive.google.com/open?id=0B7yqoohfGsHNd2d3eUVjZ1VtOVk)(6MB)
+* [time flag](https://drive.google.com/open?id=0B7yqoohfGsHNZnhuMzRfbnpfZHM)(2.5MB)
+* [labels](https://drive.google.com/open?id=0B7yqoohfGsHNTUhLWmpxXzc4dGs)(3MB)
 
-## Data organization
+## Data Organization
+Each row of data has a unique picture id(pid) along with user id(uid). All the CSV files listed above have data header that demonstrate the the meaning of the column.
 ### USER_META.txt
-user meta is contained in the database file.
+The file organization inside the file contains picture id, user id, view count, comment count, has people, title length, description length, tag count, average view, group count, average member count information:  
 
-<table class="tg" style="undefined;table-layout: fixed; width: 363px">
-<colgroup>
-<col style="width: 120px">
-<col style="width: 243px">
-</colgroup>
-  <tr>
-    <th class="tg-9hbo">Field</th>
-    <th class="tg-9hbo">Description</th>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">id</td>
-    <td class="tg-yw4l">ID</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">pid</td>
-    <td class="tg-yw4l">image id</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">uid</td>
-    <td class="tg-yw4l">user id</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">views</td>
-    <td class="tg-yw4l">view count</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">commentcount</td>
-    <td class="tg-yw4l">comment count</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">haspeople</td>
-    <td class="tg-yw4l">a boolean value 0 or 1</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">titlelen</td>
-    <td class="tg-yw4l">post title length</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">deslen</td>
-    <td class="tg-yw4l">post description length</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">tagcount</td>
-    <td class="tg-yw4l">tag count</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">avgview</td>
-    <td class="tg-yw4l">average view</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">groupcount</td>
-    <td class="tg-yw4l">group count</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">avgmembercount</td>
-    <td class="tg-yw4l">average member count</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">year</td>
-    <td class="tg-yw4l">year flag</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">month</td>
-    <td class="tg-yw4l">month flag</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">day</td>
-    <td class="tg-yw4l">day flag</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">hour_index</td>
-    <td class="tg-yw4l">hour flag</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">url</td>
-    <td class="tg-yw4l">image gallery url</td>
-  </tr>
-</table>
+```
+pid uid views commentcount haspeople titlelen deslen tagcount avgview groupcount avgmembercount  
+...  
+304582	50@N31	203	0	0	15	0	14	199.32	1188	6601
+304592	142@N94	32	0	0	11	9	0	615.61	67	21637
+... 
+```
+THe data is crawled from Flickr with user id and photo id anonymized
+### PHOTOURL.txt
+Data organized inside the file are the phtoto urls correspond to given photo id and user id:
+```
+pid uid url
+...
+9624	25@N92	https://www.flickr.com/photos/7626362@N07/1251837061
+665085	275@N38	https://www.flickr.com/photos/7690920@N06/863366976
+...
+```
+### TIMEFLAG.txt
+In order to use temporal information from dataset while protecting the user privacy, we extract year, month, day, and hour index with corresponding photo and user from dataset:
+```
+pid uid year month day hour_index
+...
+311862	11@N30	2007	3	16	4
+311863	89@N59	2007	3	16	4
+...
+```
+The definition of hour index is defined below:
+* Hour Index
 
-
-### Photos
-Photos Url are published in the database file as show above
-
-### Hour Index
 0: 2am-6am
 
 1: 6am-10am
@@ -101,11 +52,12 @@ Photos Url are published in the database file as show above
 
 5: 10pm-2am
 
-### TimeFlag.txt
-Actually, Time flags are contained in database file. However, we extract it as csv file in case of independent usage.
-[Time Flag Download Link](https://drive.google.com/open?id=0B7yqoohfGsHNQVRKQlJHYzZTZ2c)
-
-format:
-`id,year,month,day,hour_index`
-## Download the data
-[TPIC17 Download Link](https://drive.google.com/open?id=0B7yqoohfGsHNUmEyeVVtai12YjA)
+### LABEL.txt
+Finally, a file contains photo id, user id, and the normalized label is demonstrated below:
+```
+pid uid logview
+...
+9624	25@N92	3.2
+665085	275@N38	2.3
+...
+```
