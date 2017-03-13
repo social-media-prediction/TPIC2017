@@ -9,13 +9,13 @@ For temporal prediction on popularity, TPIC is an temporal image popularity data
 ## Data Organization
 Each row of data has a unique picture id(pid) along with user id(uid). All the CSV files listed above have data header that demonstrate the the meaning of the column.
 ### USER_META.txt
-The file organization inside the file contains picture id, user id, view count, comment count, has people, title length, description length, tag count, average view, group count, average member count information:  
+The file organization inside the file contains picture id, user id, comment count, has people, title length, description length, tag count, average view, group count, average member count information:  
 
 ```
-pid uid views commentcount haspeople titlelen deslen tagcount avgview groupcount avgmembercount  
+pid uid commentcount haspeople titlelen deslen tagcount avgview groupcount avgmembercount  
 ...  
-304582	50@N31	203	0	0	15	0	14	199.32	1188	6601
-304592	142@N94	32	0	0	11	9	0	615.61	67	21637
+304582	50@N31	0	0	15	0	14	199.32	1188	6601
+304592	142@N94	0	0	11	9	0	615.61	67	21637
 ... 
 ```
 THe data is crawled from Flickr with user id and photo id anonymized
