@@ -1,6 +1,6 @@
 ## Temporal Popularity Image Collection (TPIC)
 For temporal prediction on popularity, TPIC is an temporal image popularity dataset with 680K photos and corresponding anoynimized photo-sharing records on Flickr ranges of 3 years. Specifically, TPIC is also a multi-faceted data collection, which contains photo image, user profile and photo metadata. We provide the popularity as the normalized views of each photo sharing behaviors. In order to protect the private information of sharing behaviors, we convert the timestamps to segmented time information and indexed of it by integer numbers. To ensure the generalizability of our results, we sampled 100K, 200K and 400K photos with time-order. 
-## Download The Data
+## Download Data
 * [user&photo metadata](https://drive.google.com/open?id=0B7yqoohfGsHNZjFPX21sY2h0ZmM) (4.5MB)
 * [photo urls](https://drive.google.com/open?id=0B7yqoohfGsHNd2d3eUVjZ1VtOVk)(6MB)
 * [time flag](https://drive.google.com/open?id=0B7yqoohfGsHNZnhuMzRfbnpfZHM)(2.5MB)
@@ -19,7 +19,7 @@ pid uid commentcount haspeople titlelen deslen tagcount avgview groupcount avgme
 ... 
 ```
 THe data is crawled from Flickr with user id and photo id anonymized
-### PHOTOURL.txt
+### PHOTO_URL.txt
 Data organized inside the file are the phtoto urls correspond to given photo id and user id:
 ```
 pid uid url
@@ -28,7 +28,7 @@ pid uid url
 665085	275@N38	https://www.flickr.com/photos/7690920@N06/863366976
 ...
 ```
-### TIMEFLAG.txt
+### TIME_FLAG.txt
 In order to use temporal information from dataset while protecting the user privacy, we extract year, month, day, and hour index with corresponding photo and user from dataset:
 ```
 pid uid year month day hour_index
