@@ -53,7 +53,7 @@ The definition of hour index is defined below:
 * 5: 10pm-2am
 
 ### LABEL.txt
-The CSV of this type attacth labels to picture id and user id:
+The label file contains the popularity (log-views), picture id with associate user id:
 ```
 pid uid logview
 ...
