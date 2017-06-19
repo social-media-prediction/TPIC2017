@@ -65,7 +65,8 @@ pid uid logview
 1. Bo Wu, Wen-Huang Cheng, Yongdong Zhang, Qiushi Huang, Jintao Li, and Tao Mei, "Sequential Prediction of Social Media Popularity with Deep Temporal Context Networks," International Joint Conference on Artificial Intelligence (IJCAI), 19-25 August, 2017, Melbourne, Australia.
 2. Bo Wu, Tao Mei, Wen-Huang Cheng, and Yongdong Zhang, "Unfolding Temporal Dynamics: Predicting Social Media Popularity Using Multi-scale Temporal Decomposition," The 30th AAAI Conference on Artificial Intelligence (AAAI 2016), 12-17 February, 2016, Phoenix, USA.
 
-Tags
+Tag Refs:
+
 Generation Like: Comparative Characteristics in Instagram, CHI 2015
 http://tagsforlikes.com/
 http://www.tagstagram.com/
