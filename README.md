@@ -64,8 +64,11 @@ pid uid logview
 ...
 ```
 ## Reference
-1. Bo Wu, Wen-Huang Cheng, Yongdong Zhang, Qiushi Huang, Jintao Li, and Tao Mei, "Sequential Prediction of Social Media Popularity with Deep Temporal Context Networks," International Joint Conference on Artificial Intelligence (IJCAI), 19-25 August, 2017, Melbourne, Australia.
-2. Bo Wu, Tao Mei, Wen-Huang Cheng, and Yongdong Zhang, "Unfolding Temporal Dynamics: Predicting Social Media Popularity Using Multi-scale Temporal Decomposition," The 30th AAAI Conference on Artificial Intelligence (AAAI 2016), 12-17 February, 2016, Phoenix, USA.
+1. Bo Wu, Wen-Huang Cheng, Yongdong Zhang, Qiushi Huang, Jintao Li, and Tao Mei. 2017. Sequential prediction of social media popularity with deep temporal context networks. In Proceedings of the 26th International Joint Conference on Artificial Intelligence (IJCAI'17). AAAI Press 3062-3068, 19-25 August, 2017, Melbourne, Australia.
+
+2. Bo Wu, Wen-Huang Cheng, Yongdong Zhang, and Tao Mei. 2016. Time Matters: Multi-scale Temporalization of Social Media Popularity. In Proceedings of the 2016 ACM on Multimedia Conference (MM '16). ACM, New York, NY, USA, 1336-1344
+
+3. Bo Wu, Tao Mei, Wen-Huang Cheng, and Yongdong Zhang, "Unfolding Temporal Dynamics: Predicting Social Media Popularity Using Multi-scale Temporal Decomposition," In Proceedings of the Thirtieth AAAI Conference on Artificial Intelligence (AAAI'16). AAAI Press 272-278, 12-17 February, 2016, Phoenix, USA.
 
 Tag Refs:
 
