@@ -74,6 +74,8 @@ pid uid logview
 Tag Refs:
 
 Generation Like: Comparative Characteristics in Instagram, CHI 2015
+
 http://tagsforlikes.com/
+
 http://www.tagstagram.com/
 
