@@ -1,4 +1,4 @@
-## TPIC2017 - Temporal Popularity Image Collection
+# TPIC2017 - Temporal Popularity Image Collection
 #### Bo Wu Chinese Academy of Sciences, Microsoft Research Aisa
 
 ### A social media dataset for temporal popularity prediction
