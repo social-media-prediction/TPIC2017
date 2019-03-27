@@ -64,6 +64,21 @@ pid uid logview
 665085	275@N38	2.3
 ...
 ```
+#### If you intend to publish results that use the information and resources provided by SMHP Challenge, please include the following references:
+```
+@inproceedings{Wu2017DTCN,
+  title={Sequential Prediction of Social Media Popularity with Deep Temporal Context Networks},
+  author={Wu, Bo and Cheng, Wen-Huang and Zhang, Yongdong and Qiushi, Huang and Jintao, Li and Mei, Tao},
+  booktitle={IJCAI},
+  year={2017},
+  location = {Melbourne, Australia}}
+@inproceedings{Wu2016TemporalPrediction,
+  author = {Wu, Bo and Mei, Tao and Cheng, Wen-Huang and Zhang, Yongdong},
+  title = {Unfolding Temporal Dynamics: Predicting Social Media Popularity Using Multi-scale Temporal Decomposition},
+  booktitle = {AAAI}
+  year = {2016},
+  location = {Phoenix, Arizona}}
+ ```
 ## Reference
 1. Bo Wu, Wen-Huang Cheng, Yongdong Zhang, Qiushi Huang, Jintao Li, and Tao Mei. 2017. Sequential prediction of social media popularity with deep temporal context networks. In Proceedings of the 26th International Joint Conference on Artificial Intelligence (IJCAI'17). AAAI Press 3062-3068, 19-25 August, 2017, Melbourne, Australia.
 
@@ -71,11 +86,11 @@ pid uid logview
 
 3. Bo Wu, Tao Mei, Wen-Huang Cheng, and Yongdong Zhang, "Unfolding Temporal Dynamics: Predicting Social Media Popularity Using Multi-scale Temporal Decomposition," In Proceedings of the Thirtieth AAAI Conference on Artificial Intelligence (AAAI'16). AAAI Press 272-278, 12-17 February, 2016, Phoenix, USA.
 
-Tag Refs:
-
-Generation Like: Comparative Characteristics in Instagram, CHI 2015
-
+## Tag Reference
 http://tagsforlikes.com/
 
 http://www.tagstagram.com/
+
+Jang, Jin Yea, et al. "Generation like: Comparative characteristics in instagram." Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems (CHI'15), 2015.
+
 
