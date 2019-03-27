@@ -64,6 +64,7 @@ pid uid logview
 ```
 ### Contributor
 Bo Wu in Chinese Academy of Sciences and Microsoft Research Aisa
+## Citation
 #### If you intend to publish results that use the information and resources provided by SMHP Challenge, please include the following references:
 ```
 @inproceedings{Wu2017DTCN,
