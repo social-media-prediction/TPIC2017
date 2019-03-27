@@ -62,10 +62,7 @@ pid uid logview
 665085	275@N38	2.3
 ...
 ```
-### Contributor
-Bo Wu in Chinese Academy of Sciences and Microsoft Research Aisa
 ## Citation
-#### If you intend to publish results that use the information and resources provided by SMHP Challenge, please include the following references:
 ```
 @inproceedings{Wu2017DTCN,
   title={Sequential Prediction of Social Media Popularity with Deep Temporal Context Networks},
@@ -93,3 +90,6 @@ http://tagsforlikes.com/
 http://www.tagstagram.com/
 
 Jang, Jin Yea, et al. "Generation like: Comparative characteristics in instagram." Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems (CHI'15), 2015.
+
+## Contributor
+Bo Wu in Chinese Academy of Sciences and Microsoft Research Aisa
