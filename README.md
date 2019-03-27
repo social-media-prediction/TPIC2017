@@ -64,7 +64,8 @@ pid uid logview
 665085	275@N38	2.3
 ...
 ```
-#### If you intend to publish results that use the information and resources provided by SMHP Challenge, please include the following references:
+## Citation
+
 ```
 @inproceedings{Wu2017DTCN,
   title={Sequential Prediction of Social Media Popularity with Deep Temporal Context Networks},
