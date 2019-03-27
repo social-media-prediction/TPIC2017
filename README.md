@@ -3,6 +3,7 @@
 
 ### A social media dataset for temporal popularity prediction
 For temporal prediction on popularity, TPIC is an temporal image popularity dataset with 680K photos and corresponding anoynimized photo-sharing records on Flickr ranges of 3 years. Specifically, TPIC is also a multi-faceted data collection, which contains photo image, user profile and photo metadata. We provide the popularity as the normalized views of each photo sharing behaviors. In order to protect the private information of sharing behaviors, we convert the timestamps to segmented time information and indexed of it by integer numbers. To ensure the generalizability of our results, we sampled 100K, 200K and 400K photos with time-order. 
+
 ## Download Data
 * [user&photo metadata](https://drive.google.com/open?id=0B7yqoohfGsHNZjFPX21sY2h0ZmM) (4.5MB)
 * [photo urls](https://drive.google.com/open?id=0B7yqoohfGsHNd2d3eUVjZ1VtOVk)(6MB)
@@ -64,8 +65,8 @@ pid uid logview
 665085	275@N38	2.3
 ...
 ```
-## Citation
 
+## Citation
 ```
 @inproceedings{Wu2017DTCN,
   title={Sequential Prediction of Social Media Popularity with Deep Temporal Context Networks},
@@ -80,6 +81,7 @@ pid uid logview
   year = {2016},
   location = {Phoenix, Arizona}}
  ```
+ 
 ## Reference
 1. Bo Wu, Wen-Huang Cheng, Yongdong Zhang, Qiushi Huang, Jintao Li, and Tao Mei. 2017. Sequential prediction of social media popularity with deep temporal context networks. In Proceedings of the 26th International Joint Conference on Artificial Intelligence (IJCAI'17). AAAI Press 3062-3068, 19-25 August, 2017, Melbourne, Australia.
 
