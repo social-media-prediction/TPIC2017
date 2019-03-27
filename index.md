@@ -92,4 +92,4 @@ http://www.tagstagram.com/
 Jang, Jin Yea, et al. "Generation like: Comparative characteristics in instagram." Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems (CHI'15), 2015.
 
 ## Contributor
-Bo Wu (Chinese Academy of Sciences and Microsoft Research Aisa)
+Bo Wu (Chinese Academy of Sciences, Microsoft Research Aisa)
