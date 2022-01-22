@@ -1,16 +1,19 @@
-# TPIC2017 - Temporal Popularity Image Collection
-#### Bo Wu Chinese Academy of Sciences, Microsoft Research Aisa
+## TPIC2017 - Temporal Popularity Image Collection
+#### Bo Wu, Chinese Academy of Sciences, Microsoft Research Aisa
 
-### A social media dataset for temporal popularity prediction
-For temporal prediction on popularity, TPIC is an temporal image popularity dataset with 680K photos and corresponding anoynimized photo-sharing records on Flickr ranges of 3 years. Specifically, TPIC is also a multi-faceted data collection, which contains photo image, user profile and photo metadata. We provide the popularity as the normalized views of each photo sharing behaviors. In order to protect the private information of sharing behaviors, we convert the timestamps to segmented time information and indexed of it by integer numbers. 
+Temporal Popularity Image Collection (TPIC) is a large-scale and social media popularity prediction dataset including 680K social media posts with images from anonymized users of Flickr.com and their photo-sharing records range of 3 years. Meanwhile, TPIC is a multi-faceted social media dataset, which consists of photo images, user profiles, and photo metadata. We provide the rescaled and normalized popularity scores based on the view count of each online post. In order to protect the privacy of users and their sharing behaviors, we anonymised user and post identification and converted post timestamps to time segments with integer indexes.
 
 ## Download Data
-* [user&photo metadata](https://drive.google.com/open?id=0B7yqoohfGsHNZjFPX21sY2h0ZmM) (4.5MB)
-* [photo urls](https://drive.google.com/open?id=0B7yqoohfGsHNd2d3eUVjZ1VtOVk)(6MB)
-* [time flag](https://drive.google.com/open?id=0B7yqoohfGsHNZnhuMzRfbnpfZHM)(2.5MB)
-* [labels](https://drive.google.com/open?id=0B7yqoohfGsHNTUhLWmpxXzc4dGs)(3MB)
-## Data Organization
-Each row of data has a unique picture id(pid) along with user id(uid). All the CSV files listed above have data header that demonstrate the the meaning of the column.
+* [user&photo metadata](https://drive.google.com/file/d/0B7yqoohfGsHNZjFPX21sY2h0ZmM/view?usp=sharing&resourcekey=0-Do33WE1WGrl8rvOknuYT9A) (4.5MB)
+* [photo urls](https://drive.google.com/file/d/0B7yqoohfGsHNd2d3eUVjZ1VtOVk/view?usp=sharing&resourcekey=0-MKhuLGn0npi26-KpbzIwhw)(6MB)
+* [time flag](https://drive.google.com/file/d/0B7yqoohfGsHNZnhuMzRfbnpfZHM/view?usp=sharing&resourcekey=0-nHf20ChUDl38fgfCbZZYVg)(2.5MB)
+* [labels](https://drive.google.com/file/d/0B7yqoohfGsHNTUhLWmpxXzc4dGs/view?usp=sharing&resourcekey=0-yLBpw3oxkClnc4oZg_p7Jg)(3MB)
+
+
+## File Format
+Each row of data has a unique photo id (pid) along with user id (uid). All the CSV files listed above have data header that demonstrate the the meaning of the column.
+
+
 ### USER_META.txt
 The file organization inside the file contains picture id, user id, comment count, has people, title length, description length, tag count, average view, group count, average member count information:  
 
@@ -21,7 +24,7 @@ pid uid commentcount haspeople titlelen deslen tagcount avgview groupcount avgme
 304592	142@N94	0	0	11	9	0	615.61	67	21637
 ... 
 ```
-THe data is crawled from Flickr with user id and photo id anonymized
+The data is collected from Flickr, all user ids or photo ids are anonymized.
 ### PHOTO_URL.txt
 Data organized inside the file are the phtoto urls correspond to given photo id and user id:
 ```
@@ -71,28 +74,15 @@ pid uid logview
   title={Sequential Prediction of Social Media Popularity with Deep Temporal Context Networks},
   author={Wu, Bo and Cheng, Wen-Huang and Zhang, Yongdong and Qiushi, Huang and Jintao, Li and Mei, Tao},
   booktitle={IJCAI},
-  year={2017},
-  location = {Melbourne, Australia}}
-@inproceedings{Wu2016TemporalPrediction,
-  author = {Wu, Bo and Mei, Tao and Cheng, Wen-Huang and Zhang, Yongdong},
-  title = {Unfolding Temporal Dynamics: Predicting Social Media Popularity Using Multi-scale Temporal Decomposition},
-  booktitle = {AAAI}
-  year = {2016},
-  location = {Phoenix, Arizona}}
+  year={2017}}
  ```
  
-## Reference
-1. Bo Wu, Wen-Huang Cheng, Yongdong Zhang, Qiushi Huang, Jintao Li, and Tao Mei. 2017. Sequential prediction of social media popularity with deep temporal context networks. In Proceedings of the 26th International Joint Conference on Artificial Intelligence (IJCAI'17). AAAI Press 3062-3068, 19-25 August, 2017, Melbourne, Australia.
+## Related Publications
+1. Bo Wu, Tao Mei, Wen-Huang Cheng, and Yongdong Zhang, Unfolding Temporal Dynamics: Predicting Social Media Popularity Using Multi-scale Temporal Decomposition, In Proceedings of the Thirtieth AAAI Conference on Artificial Intelligence (AAAI'16). AAAI Press 272-278, 12-17 February, 2016, Phoenix, USA.
 
-2. Bo Wu, Wen-Huang Cheng, Yongdong Zhang, and Tao Mei. 2016. Time Matters: Multi-scale Temporalization of Social Media Popularity. In Proceedings of the 2016 ACM on Multimedia Conference (MM '16). ACM, New York, NY, USA, 1336-1344
+2. Bo Wu, Wen-Huang Cheng, Yongdong Zhang, and Tao Mei. Time Matters: Multi-scale Temporalization of Social Media Popularity. In Proceedings of the 2017 ACM on Multimedia Conference (ACM MM '17). ACM, New York, NY, USA, 1336-1344
 
-3. Bo Wu, Tao Mei, Wen-Huang Cheng, and Yongdong Zhang, "Unfolding Temporal Dynamics: Predicting Social Media Popularity Using Multi-scale Temporal Decomposition," In Proceedings of the Thirtieth AAAI Conference on Artificial Intelligence (AAAI'16). AAAI Press 272-278, 12-17 February, 2016, Phoenix, USA.
+3. Bo Wu, Wen-Huang Cheng, Peiye Liu, Bei Liu, Zhaoyang Zeng, Jiebo Luo. SMP Challenge: An Overview of Social Media Prediction Challenge 2019, In Proceedings of the 27th ACM International Conference on Multimedia (ACM MM), 2019.
 
-## Tag Reference
-http://tagsforlikes.com/
-
-http://www.tagstagram.com/
-
-Jang, Jin Yea, et al. "Generation like: Comparative characteristics in instagram." Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems (CHI'15), 2015.
 
 
