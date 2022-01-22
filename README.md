@@ -69,12 +69,13 @@ pid uid logview
 ```
 
 ## Citation
-```
+```BibTeX
 @inproceedings{Wu2017DTCN,
   title={Sequential Prediction of Social Media Popularity with Deep Temporal Context Networks},
   author={Wu, Bo and Cheng, Wen-Huang and Zhang, Yongdong and Qiushi, Huang and Jintao, Li and Mei, Tao},
   booktitle={IJCAI},
-  year={2017}}
+  year={2017}
+  }
  ```
  
 ## Related Publications
